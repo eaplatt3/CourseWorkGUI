@@ -8,8 +8,13 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="fileNameBox">
         <Label x:Name="label" Content="Course Work Filename" HorizontalAlignment="Left" Margin="17,21,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="151,25,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="631"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="15" Margin="151,25,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="631"/>
         <Button x:Name="openFileBtn" Content="Open Course Work JSON File" HorizontalAlignment="Left" Margin="43,66,0,0" VerticalAlignment="Top" Width="177" Click="OpenFileBtn_Click"/>
+        <Label x:Name="label1" Content="Course Name" HorizontalAlignment="Left" Margin="17,131,0,0" VerticalAlignment="Top" Width="87"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBox x:Name="courseNameBox" HorizontalAlignment="Left" Height="16" Margin="100,135,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="682"/>
+        <Label x:Name="label2" Content="Overall Grade" HorizontalAlignment="Left" Margin="17,162,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="15" Margin="100,166,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
