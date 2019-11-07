@@ -7,14 +7,41 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="fileNameBox">
-        <Label x:Name="label" Content="Course Work Filename" HorizontalAlignment="Left" Margin="17,21,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="15" Margin="151,25,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="631"/>
-        <Button x:Name="openFileBtn" Content="Open Course Work JSON File" HorizontalAlignment="Left" Margin="43,66,0,0" VerticalAlignment="Top" Width="177" Click="OpenFileBtn_Click"/>
-        <Label x:Name="label1" Content="Course Name" HorizontalAlignment="Left" Margin="17,131,0,0" VerticalAlignment="Top" Width="87"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBox x:Name="courseNameBox" HorizontalAlignment="Left" Height="16" Margin="100,135,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="682"/>
-        <Label x:Name="label2" Content="Overall Grade" HorizontalAlignment="Left" Margin="17,162,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="15" Margin="100,166,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="Course Work Filename" HorizontalAlignment="Left" Margin="17,7,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="fileNameTextBox" HorizontalAlignment="Left" Height="23" Margin="146,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="631"/>
+        <Button x:Name="openFileBtn" Content="Open Course Work JSON File" HorizontalAlignment="Left" Margin="43,38,0,0" VerticalAlignment="Top" Width="177" Click="OpenFileBtn_Click"/>
+        <Label x:Name="label1" Content="Course Name" HorizontalAlignment="Left" Margin="17,72,0,0" VerticalAlignment="Top" Width="87"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="courseNameBox" HorizontalAlignment="Left" Height="26" Margin="110,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="682" IsReadOnlyCaretVisible="True"/>
+        <Label x:Name="label2" Content="Overall Grade" HorizontalAlignment="Left" Margin="17,103,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="overallGradeTextBox" HorizontalAlignment="Left" Height="29" Margin="110,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnlyCaretVisible="True"/>
+        <ListView x:Name="categoriesListView" HorizontalAlignment="Left" Height="144" Margin="17,160,0,0" VerticalAlignment="Top" Width="129">
+            <ListView.View>
+                <GridView/>
+            </ListView.View>
+        </ListView>
+        <Label x:Name="label3" Content="Categories" HorizontalAlignment="Left" Margin="17,134,0,0" VerticalAlignment="Top"/>
+        <ListView x:Name="assignmentsListView" HorizontalAlignment="Left" Height="144" Margin="205,160,0,0" VerticalAlignment="Top" Width="386">
+            <ListView.View>
+                <GridView/>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="submissionListView" HorizontalAlignment="Left" Height="144" Margin="634,160,0,0" VerticalAlignment="Top" Width="129">
+            <ListView.View>
+                <GridView/>
+            </ListView.View>
+        </ListView>
+        <Label x:Name="label3_Copy" Content="Assigments" HorizontalAlignment="Left" Margin="194,137,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3_Copy1" Content="Submissions" HorizontalAlignment="Left" Margin="614,137,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Target Assignment Name" HorizontalAlignment="Left" Margin="17,329,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="assignmentTextBox" HorizontalAlignment="Left" Height="23" Margin="165,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" RenderTransformOrigin="0.46,-0.445"/>
+        <Button x:Name="findSubmissionBtn" Content="Find Submission" HorizontalAlignment="Left" Margin="194,373,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.516,-0.866"/>
+        <Label x:Name="label5" Content="Assignment Name" HorizontalAlignment="Left" Margin="361,311,0,0" VerticalAlignment="Top" Width="113"/>
+        <TextBox x:Name="assignmentNameTextBox" HorizontalAlignment="Left" Height="23" Margin="479,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183"/>
+        <Label x:Name="label5_Copy" Content="Category Name" HorizontalAlignment="Left" Margin="361,345,0,0" VerticalAlignment="Top" Width="113"/>
+        <TextBox x:Name="categoryNameTextBox" HorizontalAlignment="Left" Height="23" Margin="479,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183"/>
+        <Label x:Name="label5_Copy1" Content="Grade" HorizontalAlignment="Left" Margin="361,370,0,0" VerticalAlignment="Top" Width="113"/>
+        <TextBox x:Name="categoryNameTextBox_Copy" HorizontalAlignment="Left" Height="23" Margin="479,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" RenderTransformOrigin="0.354,1.165"/>
 
     </Grid>
 </Window>
